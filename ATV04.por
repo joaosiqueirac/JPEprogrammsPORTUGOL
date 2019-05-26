@@ -3,27 +3,26 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro contador, numero, quantidade
 
-		numero = 0
-		contador = 0
-		quantidade = 0
-
-		enquanto (contador < 10){
+		cadeia nomedovendendor
+		inteiro salariofixo, totaldevendas
+		real soma
 		
-			escreva("Entre com um número: ")
-			leia(numero)
+		escreva("Qual é o seu nome? ")
+		leia(nomedovendendor)
 
-			se(numero > 30 e numero < 90){
-				quantidade = quantidade + 1
-				
-			}
+		escreva("Qual é o seu salário fixo? ")
+		leia(salariofixo)
 
-			contador = contador + 1
-			
-		}//fim enquanto
+		escreva("Qual é o seu total de vendas? ")
+		leia(totaldevendas)
 
-		escreva("Quantidade de número de 30 entre 90: ",quantidade)
+		soma = totaldevendas * 0.15
+
+		escreva("\n O Nome do vendedor é: ", nomedovendendor)
+		escreva("\n O Salário fixo dele é: ", salariofixo)
+		escreva("\n O Salário final no mês dele é: ", salariofixo + soma, "\n")
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -31,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 149; 
+ * @POSICAO-CURSOR = 205; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -3,37 +3,26 @@ programa
 	
 	funcao inicio()
 	{
-		cadeia nome, sexo
-		inteiro idade
+		real DistanciaPercorrida, combustivelgasto, consumomedio
 		
-		escreva("Escreva o seu sexo (M ou F) ")
-		leia(sexo)
+		escreva("Vamos ver qual é o consumo médio de um carro \n ")
 		
-		escreva("Escreva seu nome: ")
-		leia(nome)
+		escreva("Qual é a sua distância percorrida? \n")
+		leia(DistanciaPercorrida)
 
-		escreva("Escreva a sua idade: ")
-		leia(idade)
+		escreva("Informe o combustível gasto: \n")
+		leia(combustivelgasto)
 
+		consumomedio = DistanciaPercorrida / combustivelgasto
 
+		escreva("O consumo médio é: \n", consumomedio)
 
-		se(sexo == "M" e idade > 65){
-		escreva(nome," ","pode se aposentar.")
 		
-		}senao 
-			se(sexo != "F"){
-			escreva(nome," ","Ainda não pode se aposentar! ")
-		}
 		
-		senao
-			se(sexo == "F" e idade > 60){
-			escreva(nome," ","pode se aposentar")	
+
 		
-		}senao 
-			se(sexo != "M"){
-			escreva(nome," ","Ainda não pode se aposentar! ")
-		}
-	
+
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -41,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 512; 
+ * @POSICAO-CURSOR = 94; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

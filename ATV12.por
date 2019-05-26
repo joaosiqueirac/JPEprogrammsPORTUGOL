@@ -3,33 +3,26 @@ programa
 	
 	funcao inicio()
 	{
-		cadeia nome
-		real nota1, nota2, nota3, totaldanota
+
+		inteiro numero
 		
-		escreva("Escreva o seu nome: ")
-		leia(nome)
+		escreva("Escreva um número: ")
+		leia(numero)
 
-		escreva("Escreva a sua 1° nota?: ")
-		leia(nota1)
+		se(numero>10) 
+		escreva("O número é maior que 10")
 
-		escreva("Escreva a sua 2° nota?: ")
-		leia(nota2)
-
-		escreva("Escreva a sua 3° nota?: ")
-		leia(nota3)
-
-		totaldanota = (nota1 + nota2 + nota3)/3
-
-		escreva("A sua média é: ",totaldanota)
-		
+		senao
+		escreva(numero)
 	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 366; 
+ * @POSICAO-CURSOR = 189; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
